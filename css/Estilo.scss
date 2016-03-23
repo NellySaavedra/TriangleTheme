@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+/*-------------------Funciones---------------------------*/
+$Orange: #d29948;
+
+/*---------------------------------------------*/
+body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000; 
+}
+html {
+  height: 100%; 
+}
+a {
+    color: #a5732a;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; 
+  }
+a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #dab074; 
+  }
+a:focus {
+    outline: none;
+    outline-offset: 0; 
+  }
+ul {
+  list-style: none; 
+}
+h1, h2, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; 
+}
+h2 {
+  font-size: 24px; 
+}
+h3 {
+  font-size: 18px; 
+}
+.overflow {
+  overflow: hidden; 
+}
+.uppercase {
+  text-transform: uppercase; 
+}
+.btn-common {
+  font-size: 14px;
+  color: #797979;
+  border: 1px solid #dbb075;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 10px 25px; 
+}
+#action .col-sm-5 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0; 
+}
+.btn-common:hover,
+.btn-common:focus {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: #d29948; 
+}
+.align-right {
+  text-align: right; 
+}
+.inline {
+  display: inline-block; 
+}
+.padding {
+  padding: 65px 0; 
+}
+.padding-bottom {
+  padding-bottom: 65px; 
+}
+.padding-top {
+  padding-top: 90px; 
+}
+.padding-right {
+  padding-right: 80px; 
+}
+.padding-left {
+  padding-left: 80px; 
+}
+.margin-bottom {
+  margin-bottom: 35px; 
+}
+
+/*************************
+*******Header******
+**************************/
+#header {
+  margin-bottom: 0;
+  padding: 30px 0 60px 0; }
+#header .navbar-inverse .container {
+  position: relative; }
+.social-icons ul li {
+  padding: 0 10px; }
+.social-icons ul li:last-child {
+  padding-right: 0; }
+.social-icons ul li a {
+  font-size: 18px;
+  color: #d3d3d3;
+  padding: 0; }
+.social-icons ul li a:hover, .social-icons ul li a:focus {    
+  color: #dbb075;
+  background: none; }
+#header .navbar {
+  background: #fff;
+  border: 0;
+  margin-bottom: 0; }
+#header .navbar-toggle {
+  margin-top: 20px; }
+#header .navbar-brand {
+  padding: 0;
+  margin-left: 0; }
+#header .navbar-brand h1, #header .navbar-brand h2 {
+  padding: 0;
+  margin: 0; }
+#header .navbar-nav.navbar-right > li a  {
+  /*color: #000;*/
+  font-size: 12px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 300; }
+#header .navbar-nav.navbar-right > li:last-child {
+  margin-right: 20px; }
+/*#header .navbar-inverse .navbar-nav li a:hover {
+  color: #d29948; }*/
+/*#header .navbar-inverse .navbar-nav li.active > a, #header .navbar-inverse .navbar-nav li.active > a:focus {
+  background-color: inherit;
+  border: 0;
+  color: #d29948; }*/
+#header .navbar-nav li ul.sub-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+#header .navbar-nav li ul.sub-menu li a {
+  color: #818285;
+  padding: 5px 0;
+  font-size: 13px;
+  display: block;
+  text-transform: capitalize; }
+#header .navbar-nav li ul.sub-menu li:hover, #header .navbar-nav li ul.sub-menu li:focus {
+  background: #fef7ee;
+  color: #d29948; }
+#header .navbar-nav li ul.sub-menu li .active {
+  background: #fef7ee;
+  color: #d29948;
+  position: relative; }
+#header .navbar-nav li ul.sub-menu li .active i {
+  position: absolute;
+  font-size: 56px;
+  top: -13px;
+  color: #dab074; }
+#header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
+  left: -3px; }
+#header .navbar-nav li ul.sub-menu li .active .fa-angle-left {
+  right: -3px; }
+#header .navbar-inverse .navbar-nav li.active > a,
+#header .navbar-inverse .navbar-nav li.active > a:focus,
+#header .navbar-nav.navbar-right li > a:hover,
+.navbar-inverse .navbar-nav > .open > a {
+  background-color: inherit;
+  border: 0;
+  color: #d29948; }
+/*---------------------Codigo-Nello---------------------------------*/
+.navbar-toggle {
+  background-color: #d29948;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: white !important;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #dab074 !important;
+}
+#home-slider {
+  background-image: url(../images/home/slider-bg.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  width: 100%;    
+  height: 400px;
+  z-index: -1;
+}
+/*------------Escena de casa----------------*/
+.slider-cycle {
+  vertical-align: bottom;
+}
+.CajaCasa {
+  width: 100%;
+  height: 330px;
+}
+.slider-cloud1, .slider-cloud2, .slider-cloud3, .slider-sun,  {
+  width: 12%;  
+  position: absolute;
+}
+.slider-cloud1 {
+  bottom: 60%;
+  left: 50%;
+}
+.slider-cloud2 {
+  bottom: 70%;
+  left: 35%;
+  width: 15%;
+}
+.slider-cloud3 {
+  bottom: 70%;
+  left: 70%;
+}
+.slider-sun {
+  bottom: 70%;
+  left: 56%;
+}
+.slider-circle1, .slider-circle2 {
+  width: 1%;
+  position: absolute;
+  right: 51%;
+  bottom: 50%;
+}
+.slider-house {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.slider-cycle {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 65%;
+}
+/*------------------Panel2--------------------*/
+.single-service {
+  height: 300px;
+  margin-top: 30px;
+}
+.PTop {
+  padding-top: 42px;
+}
+.vertical-center {
+  background-image: url(../images/home/tour-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 100px;
+  z-index: -4;
+}
+.single-features {
+  border: solid 1px white;
+  height: 300px;
+}
+.margengis {
+  width: 100%;
+  height: 100px !important;
+}
+.tour-button {
+  padding-top: 6%;
+  padding-bottom: 10%;
+}
+.backAvion {
+  background-image: url(../images/home/tour-icon2.png);
+  background-repeat: round;
+  background-position: top;
+  width: 100%;
+  height: 30px;
+  z-index: -1;
+}
+.BackFooter {
+  background-image: url(../images/home/footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  z-index: -1;
+}
+
+/*-----------Variables---------------*/
+ $Orange: #d29948;
+ $Mbottom: 40px;
+ $Absolute: absolute;
+
+body {
+    h1,h2,h3 {
+      color: $Orange;
+    }
+    .CajaCasa {
+      position:  $Absolute;
+    }
+
+  } 
+footer {
+      h2 {
+        margin-bottom: $Mbottom;
+      }
+      .form-control:focus {
+        border-color: $Orange; 
+        -webkit-box-shadow: 0px 0px 2px 2px rgba(210,153,72,1);
+        box-shadow: 0px 0px 2px 2px rgba(210,153,72,1);
+      }
+      .btn-submit {
+      background-color: $Orange;
+      color: white;
+      width: 100%;
+      }
+}
+#clients{
+      .img-responsive {
+      padding-bottom: $Mbottom;
+      padding-top: $Mbottom;
+      }
+}
+.copyright-text {
+    padding: 50px 0px;
+}
+/*------------Medias----------------*/
+@media (max-width: 768px) {
+      .single-features {
+        height: 400px;
+        text-align: left;
+      }
+      .PTop {
+      padding-top: 90px;
+      }
+      .vertical-center {
+        height: 240px;
+      }
+      .img-responsive {
+      padding: 0px !important;
+      }
+      .testimonial {
+        text-align: center;
+        .media {
+          text-align: left;
+        }
+      }
+    .single-service {
+      height: 100%;
+    }
+    #services {
+      margin: 10px 0px;
+    }
+    .contact-form {
+      text-align: center;
+    }
+    .CajaCasa {
+      height: 280px;
+    }
+    .home-slider {
+      width: 300px;
+    }
+}
